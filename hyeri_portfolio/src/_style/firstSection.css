@@ -1,0 +1,87 @@
+@import "./common.css";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  background: #0a0307 url("../assets/bg/section_1_bg.png") no-repeat top center;
+  color: white;
+}
+
+.mainText {
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.mainImg {
+  width: 235px;
+  height: 235px;
+}
+
+.scrollBox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  position: absolute;
+  width: 28px;
+  height: 7px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.icon:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.icon:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.icon:before,
+.icon:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+  box-shadow: 0 3px 15px rgba(65, 166, 249, 0.617);
+}
+
+.icon:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.icon:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
