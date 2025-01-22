@@ -1,0 +1,40 @@
+@import "./common.css";
+
+.naviWrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 0;
+  color: white;
+  cursor: default;
+  z-index: 99999999;
+}
+
+.linkContents {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.linkContents > li > a {
+  color: white;
+  text-decoration-line: none;
+}
+
+.linkContents > li > a:hover,
+.linkContents > li > button:hover {
+  color: #267be4;
+  font-family: "Pretendard-ExtraBold";
+}
+
+.linkContents > li > button {
+  padding: 0;
+  padding-block: 0;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: transparent;
+}
