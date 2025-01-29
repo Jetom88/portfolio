@@ -2,22 +2,24 @@ import "../_style/firstSection.css";
 
 const FirstSection = () => {
   return (
-    <div className="wrapper">
-      <h2 className="mainText">
-        <span className="bold">협업</span>과 <span className="bold">성장</span>에 집중하는 <br />
-        프론트엔드 개발자 <span className="bold">신혜리</span>입니다.
-      </h2>
+    <section className="firstWrapper">
+      <header>
+        <h2 className="mainText">
+          <span className="semiBold">협업</span>과 <span className="semiBold">성장</span>에 집중하는 <br />
+          프론트엔드 개발자 <span className="semiBold">신혜리</span>입니다.
+        </h2>
+      </header>
 
-      <div className="mainImg">
-        <img src="/assets/main_img.png" alt="main img" />
-      </div>
+      <figure className="mainImg">
+        <img src="/assets/main_img.png" alt="메인 사진" />
+      </figure>
 
-      <div className="scrollBox">
+      <div className="scrollBox" aria-label="scroll down">
         <div className="icon" />
         <div className="icon" />
         <div className="icon" />
       </div>
-    </div>
+    </section>
   );
 };
 
