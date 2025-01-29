@@ -1,6 +1,6 @@
 @import "./reset.css";
 @import "./font.css";
 
-.bold {
-  font-family: "Pretendard-Bold";
+.semiBold {
+  font-family: "Pretendard-SemiBold";
 }

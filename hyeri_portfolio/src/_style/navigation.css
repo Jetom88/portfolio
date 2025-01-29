@@ -2,14 +2,14 @@
 
 .naviWrapper {
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 12px 0;
   color: white;
   cursor: default;
   z-index: 99999999;
+}
+
+.naviContainer {
+  display: flex;
+  align-items: center;
 }
 
 .linkContents {
@@ -27,7 +27,7 @@
 .linkContents > li > a:hover,
 .linkContents > li > button:hover {
   color: #267be4;
-  font-family: "Pretendard-ExtraBold";
+  font-family: "Pretendard-bold";
 }
 
 .linkContents > li > button {

@@ -1,0 +1,50 @@
+@import "./common.css";
+
+.secondWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 0 180px;
+}
+
+.nameContents > h2 {
+  position: relative;
+  margin-bottom: 48px;
+  font-size: 150px;
+  font-family: "Pretendard-SemiBold";
+}
+
+.nameContents > h2::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 48px;
+  width: 95%;
+  height: 95px;
+  background: #d9d9d9;
+  z-index: -1;
+}
+
+.nameContents > p {
+  margin-left: 44px;
+}
+
+.interviewWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.goalTitle {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.interviewWrapper p:not(.goalTitle) {
+  color: #909090;
+  line-height: 1.3;
+}

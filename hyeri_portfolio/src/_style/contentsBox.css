@@ -1,0 +1,47 @@
+@import "./common.css";
+
+.contentsBoxWrapper {
+  max-width: 312px;
+  height: 340px;
+  background: #505050;
+  padding: 28px;
+  border-radius: 16px;
+}
+
+.hoverContentBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 312px;
+  height: 340px;
+  background: #818181;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 5px 35px #565656;
+}
+
+.contentsTitle {
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+
+.contentBoxDescription {
+  color: #a0a0a0;
+}
+
+.hoverContent {
+  color: #e4e4e4;
+}
+
+.readMore {
+  margin: 0 auto;
+  padding: 10px 50px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.readMore:hover {
+  color: #0a0307;
+  background: #fff;
+}
