@@ -1,15 +1,32 @@
 @import "./common.css";
 
-.naviWrapper {
+.whiteNaviWrapper,
+.blackNaviWrapper {
   position: fixed;
-  color: white;
+  width: 100%;
   cursor: default;
+  backdrop-filter: blur(4px);
   z-index: 99999999;
+}
+
+.whiteNaviWrapper,
+.whiteLink,
+.whiteButton {
+  color: white;
+}
+
+.blackNaviWrapper,
+.blackLink,
+.blackButton {
+  color: #0a0307;
 }
 
 .naviContainer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 4px 180px 0 180px;
+  width: calc(100% - 360px);
 }
 
 .linkContents {
@@ -19,8 +36,8 @@
   font-size: 12px;
 }
 
-.linkContents > li > a {
-  color: white;
+.whiteLink,
+.blackLink {
   text-decoration-line: none;
 }
 
@@ -30,11 +47,11 @@
   font-family: "Pretendard-bold";
 }
 
-.linkContents > li > button {
+.whiteButton,
+.blackButton {
   padding: 0;
   padding-block: 0;
   cursor: pointer;
-  color: white;
   border: none;
   background: transparent;
 }
