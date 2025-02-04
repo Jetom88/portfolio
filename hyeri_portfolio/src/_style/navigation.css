@@ -5,8 +5,8 @@
   position: fixed;
   width: 100%;
   cursor: default;
-  backdrop-filter: blur(4px);
   z-index: 99999999;
+  backdrop-filter: blur(6px);
 }
 
 .whiteNaviWrapper,
@@ -44,7 +44,7 @@
 .linkContents > li > a:hover,
 .linkContents > li > button:hover {
   color: #267be4;
-  font-family: "Pretendard-bold";
+  font-weight: bold;
 }
 
 .whiteButton,
