@@ -3,7 +3,7 @@
 .contentsBoxWrapper {
   max-width: 312px;
   height: 340px;
-  background: #505050;
+  background: #373737;
   padding: 28px;
   border-radius: 16px;
 }
@@ -14,10 +14,11 @@
   justify-content: space-between;
   max-width: 312px;
   height: 340px;
-  background: #818181;
+  background: #797979;
   padding: 28px;
   border-radius: 16px;
   box-shadow: 0 5px 35px #565656;
+  transition: all 0.3s ease-in-out;
 }
 
 .contentsTitle {

@@ -4,8 +4,35 @@ import Slider from "react-slick";
 import ContentsBox from "./common/ContentsBox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 
 const CareerSection = () => {
+  const [hoverIndex, setHoverIndex] = useState<null | number>(null);
+
+  const handleMouseEnter = (index: number) => {
+    setHoverIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoverIndex(null);
+  };
+
+  const contents = [
+    {
+      title: "N-PIK",
+      content: "웹 브라우저에서 즉시 플레이할 수 있는 다양한 게임을 제공하는 사이트입니다.",
+    },
+    {
+      title: "PIK-Swap",
+      content: "PIK-Swap은 Pik Coin을 예약 구매하여 할인된 가격으로 구입할 수 있는 사이트입니다.",
+    },
+    {
+      title: "ad-service",
+      content:
+        "구매자의 상품 정보를 수집하여 데이터베이스에 보관하고, 검색 순위 개선을 위해 자동 검색 절차를 활용하는 B2B 서비스입니다.",
+    },
+  ];
+
   const sliderSettings = {
     arrows: true,
     speed: 500,
@@ -39,22 +66,17 @@ const CareerSection = () => {
             플랫폼의 사용자 경험을 향상시켰습니다.
           </p>
           <div className="carouselContents">
-            <ContentsBox
-              title="N-PIK"
-              content="웹 브라우저에서 즉시 플레이할 수 있는 
-다양한 게임을 제공하는 사이트입니다."
-            />
-            <ContentsBox
-              title="PIK-Swap"
-              content="PIK-Swap은 Pik Coin을 예약 구매하여 
-할인된 가격으로 구입할 수 있는 사이트입니다."
-            />
-            <ContentsBox
-              title="ad-service"
-              content="구매자의 상품 정보를 수집하여 데이터베이스에 
-보관하고, 검색 순위 개선을 위해 자동 
-검색 절차를 활용하는 B2B 서비스입니다."
-            />
+            {contents.map((item, index) => {
+              return (
+                <ContentsBox
+                  title={item.title}
+                  content={item.content}
+                  hover={hoverIndex === index}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                />
+              );
+            })}
           </div>
         </article>
 
