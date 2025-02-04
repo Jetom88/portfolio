@@ -5,16 +5,23 @@ import ContentsBox from "./common/ContentsBox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CarouselSection = () => {
+const CareerSection = () => {
   const sliderSettings = {
     arrows: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     accessibility: true, // 접근성 활성화
-    infinite: false,
-    nextArrow: <button aria-label="다음 슬라이드">Next</button>,
-    prevArrow: <button aria-label="이전 슬라이드">Previous</button>,
+    nextArrow: (
+      <button aria-label="다음 슬라이드">
+        <img src="/assets/next.png" />
+      </button>
+    ),
+    prevArrow: (
+      <button aria-label="이전 슬라이드">
+        <img src="/assets/prev.png" />
+      </button>
+    ),
   };
 
   return (
@@ -36,7 +43,6 @@ const CarouselSection = () => {
               title="N-PIK"
               content="웹 브라우저에서 즉시 플레이할 수 있는 
 다양한 게임을 제공하는 사이트입니다."
-              hover
             />
             <ContentsBox
               title="PIK-Swap"
@@ -62,12 +68,7 @@ const CarouselSection = () => {
             페이지 레이아웃과 인터랙션 디자인을 최적화해 사용자 경험을 개선했습니다.
           </p>
           <div className="carouselContents">
-            <ContentsBox
-              title="N-PIK"
-              content="웹 브라우저에서 즉시 플레이할 수 있는 
-다양한 게임을 제공하는 사이트입니다."
-              hover
-            />
+            <ContentsBox title="위시드보험중개" content="재보험 거래를 위한 정보를 제공하는 사이트입니다." />
           </div>
         </article>
 
@@ -82,10 +83,8 @@ const CarouselSection = () => {
           </p>
           <div className="carouselContents">
             <ContentsBox
-              title="N-PIK"
-              content="웹 브라우저에서 즉시 플레이할 수 있는 
-다양한 게임을 제공하는 사이트입니다."
-              hover
+              title="한솔루션(주)"
+              content="홈페이지 제작 및 리뉴얼 서비스를 제공하는 사이트입니다."
             />
           </div>
         </article>
@@ -94,4 +93,4 @@ const CarouselSection = () => {
   );
 };
 
-export default CarouselSection;
+export default CareerSection;
