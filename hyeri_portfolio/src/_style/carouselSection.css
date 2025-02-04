@@ -14,12 +14,13 @@
 
 .carouselWrapper > h2 {
   font-size: 30px;
-  margin-bottom: 36px;
   font-family: "Pretendard-SemiBold";
+  padding: 0 140px;
 }
 
 .carouselContainer {
   width: 100%;
+  padding: 35px 0;
 }
 
 .workExperience {
@@ -43,13 +44,14 @@
 
 .carouselContents {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 100px;
+  padding: 0 145px;
 }
 
 .slick-prev,
 .slick-next {
-  top: 65% !important;
+  top: 30% !important;
   z-index: 9999;
 }
 
@@ -59,4 +61,9 @@
 
 .slick-next {
   right: 50px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
 }

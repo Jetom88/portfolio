@@ -1,11 +1,5 @@
 @import "./common.css";
 
-/* body는 100% / padding은 주면 안됨! */
-/* html 시멘틱태그 / 웹표준 */
-/* html 태그 싹- 다 고치기! */
-/* setState not working jest -> 두시간 고민 해보기~~~ */
-/* merge하기! -> 새로 에프랩꺼 가져오기 */
-
 .firstWrapper {
   position: relative;
   display: flex;

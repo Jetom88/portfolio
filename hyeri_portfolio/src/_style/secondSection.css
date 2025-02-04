@@ -8,6 +8,7 @@
   justify-content: space-evenly;
   height: 100vh;
   padding: 0 180px;
+  background-color: white;
 }
 
 .nameContents > h2 {
@@ -15,6 +16,7 @@
   margin-bottom: 48px;
   font-size: 150px;
   font-family: "Pretendard-SemiBold";
+  z-index: 0;
 }
 
 .nameContents > h2::before {
