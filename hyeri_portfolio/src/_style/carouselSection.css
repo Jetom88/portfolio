@@ -1,10 +1,15 @@
 @import "./common.css";
 @import "slick-carousel/slick/slick.css";
 
+.backgroundBlur {
+  filter: blur(4px);
+}
+
 .carouselWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
   height: 100vh;
   background: #0a0307 url("../assets/bg/carousel_bg.png") no-repeat center center;
   color: white;

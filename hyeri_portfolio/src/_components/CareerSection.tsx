@@ -5,6 +5,7 @@ import ContentsBox from "./common/ContentsBox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
+import ProjectOverview from "./common/ProjectOverview";
 
 const CareerSection = () => {
   const [hoverIndex, setHoverIndex] = useState<null | number>(null);
@@ -52,66 +53,73 @@ const CareerSection = () => {
   };
 
   return (
-    <section className="carouselWrapper" aria-label="경력 소개 섹션">
-      <h2>Career</h2>
-      <Slider {...sliderSettings}>
-        <article className="carouselContainer">
-          <header className="workExperience">
-            <p className="companyName">엔포트버스</p>
-            <time dateTime="2022-08">2022.08</time> - <time dateTime="2024-05">2024.05</time>
-          </header>
-          <p className="contentDescription">
-            WebSocket 실시간 통신과 GPU 가속 애니메이션으로 게임 성능을 <br />
-            최적화하고, 동적 사운드 시스템과 Progress Bar 구현으로 몰입도 높은 UI/UX를 제공하여 <br />웹 게임
-            플랫폼의 사용자 경험을 향상시켰습니다.
-          </p>
-          <div className="carouselContents">
-            {contents.map((item, index) => {
-              return (
-                <ContentsBox
-                  title={item.title}
-                  content={item.content}
-                  hover={hoverIndex === index}
-                  onMouseEnter={() => handleMouseEnter(index)}
-                  onMouseLeave={handleMouseLeave}
-                />
-              );
-            })}
-          </div>
-        </article>
+    <>
+      <ProjectOverview />
+      <section className="carouselWrapper" aria-label="경력 소개 섹션">
+        <h2>Career</h2>
+        <Slider {...sliderSettings}>
+          <article className="carouselContainer">
+            <header className="workExperience">
+              <p className="companyName">엔포트버스</p>
+              <time dateTime="2022-08">2022.08</time> - <time dateTime="2024-05">2024.05</time>
+            </header>
+            <p className="contentDescription">
+              WebSocket 실시간 통신과 GPU 가속 애니메이션으로 게임 성능을 <br />
+              최적화하고, 동적 사운드 시스템과 Progress Bar 구현으로 몰입도 높은 UI/UX를 제공하여 <br />웹
+              게임 플랫폼의 사용자 경험을 향상시켰습니다.
+            </p>
+            <div className="carouselContents">
+              {contents.map((item, index) => {
+                return (
+                  <ContentsBox
+                    title={item.title}
+                    content={item.content}
+                    hover={hoverIndex === index}
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                );
+              })}
+            </div>
+          </article>
 
-        <article className="carouselContainer">
-          <header className="workExperience">
-            <p className="companyName">위시드보험중개</p>
-            <time dateTime="2021-12">2021.12</time> - <time dateTime="2022-02">2022.02</time>
-          </header>
-          <p className="contentDescription">
-            회사 홈페이지의 디자인과 UI/UX 개선 작업을 맡아 초기 기획부터 반응형 퍼블리싱까지 진행하며, <br />
-            페이지 레이아웃과 인터랙션 디자인을 최적화해 사용자 경험을 개선했습니다.
-          </p>
-          <div className="carouselContents">
-            <ContentsBox title="위시드보험중개" content="재보험 거래를 위한 정보를 제공하는 사이트입니다." />
-          </div>
-        </article>
+          <article className="carouselContainer">
+            <header className="workExperience">
+              <p className="companyName">위시드보험중개</p>
+              <time dateTime="2021-12">2021.12</time> - <time dateTime="2022-02">2022.02</time>
+            </header>
+            <p className="contentDescription">
+              회사 홈페이지의 디자인과 UI/UX 개선 작업을 맡아 초기 기획부터 반응형 퍼블리싱까지 진행하며,{" "}
+              <br />
+              페이지 레이아웃과 인터랙션 디자인을 최적화해 사용자 경험을 개선했습니다.
+            </p>
+            <div className="carouselContents">
+              <ContentsBox
+                title="위시드보험중개"
+                content="재보험 거래를 위한 정보를 제공하는 사이트입니다."
+              />
+            </div>
+          </article>
 
-        <article className="carouselContainer">
-          <header className="workExperience">
-            <p className="companyName">한솔루션(주)</p>
-            <time dateTime="2020-10">2020.10</time> - <time dateTime="2021-07">2021.07</time>
-          </header>
-          <p className="contentDescription">
-            웹 기획과 디자인 설계를 주도하며 다양한 디바이스 환경에서도
-            <br /> 최적의 사용자 경험을 제공하기 위해 반응형 웹 개발을 수행했습니다.
-          </p>
-          <div className="carouselContents">
-            <ContentsBox
-              title="한솔루션(주)"
-              content="홈페이지 제작 및 리뉴얼 서비스를 제공하는 사이트입니다."
-            />
-          </div>
-        </article>
-      </Slider>
-    </section>
+          <article className="carouselContainer">
+            <header className="workExperience">
+              <p className="companyName">한솔루션(주)</p>
+              <time dateTime="2020-10">2020.10</time> - <time dateTime="2021-07">2021.07</time>
+            </header>
+            <p className="contentDescription">
+              웹 기획과 디자인 설계를 주도하며 다양한 디바이스 환경에서도
+              <br /> 최적의 사용자 경험을 제공하기 위해 반응형 웹 개발을 수행했습니다.
+            </p>
+            <div className="carouselContents">
+              <ContentsBox
+                title="한솔루션(주)"
+                content="홈페이지 제작 및 리뉴얼 서비스를 제공하는 사이트입니다."
+              />
+            </div>
+          </article>
+        </Slider>
+      </section>
+    </>
   );
 };
 
