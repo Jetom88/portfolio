@@ -1,4 +1,14 @@
 .projectOverviewWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  z-index: 999;
+}
+
+.projectOverviewContainer {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -6,8 +16,6 @@
   width: 1062px;
   background: white;
   border-radius: 12px;
-
-  z-index: 9999999;
   color: #0a0307;
 }
 
@@ -15,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 10px 4px 10px;
+  padding: 12px 62px 4px 10px;
 }
 
 .dotWrapper {
@@ -99,14 +107,14 @@
   background: #87837826;
 }
 
-.linkContents {
+.projectLinkContents {
   display: flex;
   flex-direction: column;
   gap: 8px;
   font-size: 16px;
 }
 
-.linkContents > a {
+.projectLinkContents > a {
   color: #0a0307;
   text-decoration: none;
 }
