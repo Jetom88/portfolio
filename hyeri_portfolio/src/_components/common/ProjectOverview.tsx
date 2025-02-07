@@ -64,7 +64,7 @@ const ProjectOverview = ({
           </div>
 
           <div className="projectLinkContents">
-            <h3>🔗 관련 블로그</h3>
+            <h3>🔗 관련 링크</h3>
             {link}
           </div>
         </div>
