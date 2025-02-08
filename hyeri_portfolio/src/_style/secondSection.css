@@ -50,3 +50,28 @@
   color: #909090;
   line-height: 1.3;
 }
+
+/* media query */
+
+@media (max-width: 800px) {
+  .secondWrapper {
+    padding: 0 10px;
+  }
+
+  .nameContents > h2::before {
+    display: none;
+  }
+
+  .nameContents > p {
+    margin-left: 0;
+  }
+
+  .interviewWrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  br {
+    display: none;
+  }
+}

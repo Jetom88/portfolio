@@ -45,12 +45,31 @@ const App = () => {
           <meta name="description" content="프론트엔드 신혜리의 포트폴리오입니다." />
           <meta property="og:title" content="프론트엔드 신혜리 포트폴리오" />
           <meta property="og:description" content="프론트엔드 신혜리의 포트폴리오입니다." />
-          <meta property="og:image" content="/assets/opengraph.jpg" />
+          <meta property="og:image" content="https://hyeri-portfolio.vercel.app/assets/opengraph.jpg" />
           <meta property="og:url" content="https://hyeri-portfolio.vercel.app/" />
-          <link rel="icon" type="image/png" href="/assets/16x16.png" sizes="16x16" />
-          <link rel="icon" type="image/png" href="/assets/32x32.png" sizes="32x32" />
-          <link rel="icon" type="image/png" href="/assets/48x48.png" sizes="48x48" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/assets/180x180.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            href="https://hyeri-portfolio.vercel.app/assets/16x16.png"
+            sizes="16x16"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            href="https://hyeri-portfolio.vercel.app/assets/32x32.png"
+            sizes="32x32"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            href="https://hyeri-portfolio.vercel.app/assets/48x48.png"
+            sizes="48x48"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://hyeri-portfolio.vercel.app/assets/180x180.png"
+          />
         </Helmet>
       </HelmetProvider>
       <Navigation navColor={navColor} />

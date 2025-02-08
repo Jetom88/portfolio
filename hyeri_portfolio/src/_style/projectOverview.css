@@ -13,7 +13,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1062px;
+  max-width: 1062px;
+  min-width: 400px;
   background: white;
   border-radius: 12px;
   color: #0a0307;
@@ -117,4 +118,25 @@
 .projectLinkContents > a {
   color: #0a0307;
   text-decoration: none;
+}
+
+/* media query */
+
+@media (max-width: 800px) {
+  .projectContentsWrapper {
+    padding: 0 20px;
+  }
+
+  .projectSummary {
+    margin-bottom: 20px;
+  }
+
+  .projectContentsWrapper > div {
+    padding-bottom: 20px;
+  }
+
+  .techStackWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

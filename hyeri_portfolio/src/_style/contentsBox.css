@@ -1,7 +1,7 @@
 @import "./common.css";
 
 .contentsBoxWrapper {
-  max-width: 312px;
+  width: 312px;
   height: 340px;
   background: #373737;
   padding: 28px;
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 312px;
+  width: 312px;
   height: 340px;
   background: #797979;
   padding: 28px;
@@ -45,4 +45,15 @@
 .readMore:hover {
   color: #0a0307;
   background: #fff;
+}
+
+/* media query */
+
+@media (max-width: 800px) {
+  .contentsBoxWrapper,
+  .hoverContentBoxWrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+  }
 }

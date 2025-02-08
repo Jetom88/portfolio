@@ -291,6 +291,7 @@ const CareerSection = () => {
   ];
 
   const sliderSettings = {
+    dots: false,
     arrows: true,
     speed: 500,
     slidesToShow: 1,
@@ -306,6 +307,15 @@ const CareerSection = () => {
         <img src="/assets/prev.png" />
       </button>
     ),
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   const filteredProjectContent = projectOverViewContents.filter(

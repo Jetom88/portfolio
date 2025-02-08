@@ -245,7 +245,7 @@ const SideProjectSection = () => {
           onClose={closePopup}
         />
       )}
-      <h2>Side Project</h2>
+      <h2 className="carouselProjectName">Side Project</h2>
       <Slider {...sliderSettings}>
         <article className="carouselContainer">
           <header className="workExperience">
